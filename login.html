@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/c206ee4fbe.js" crossorigin="anonymous"></script>
+    <style>
+        .login-form {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+
+        }
+
+        .login-form input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .login-form input[type="submit"] {
+            background-color: rgb(30, 118, 252);
+            border: 0;
+            border-radius: 8px;
+            font-weight: 700;
+            color: whitesmoke;
+            font-size: larger;
+
+        }
+
+        .login-form input[type="button"] {
+            border: 0;
+            border-radius: 8px;
+            background-color: rgb(16, 228, 228);
+            font-size: larger;
+            color: whitesmoke;
+            font-weight: 700;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: right 10px;
+            ;
+            color: black;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section><a href="">Home</a>
+                <a href="">Dashboard</a>
+                <a href="">About us</a>
+            </section>
+            <section><a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+            </section>
+        </nav>
+    </header>
+    <section class="container">
+        <form class="login-form">
+            <h2>Please login</h2>
+            <input type="email" name="email" placeholder="Your E-mail" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+            <input type="button" value="Cancel">
+        </form>
+    </section>
+</body>
+
+</html>
